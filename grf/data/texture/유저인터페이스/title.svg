@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2048"
+   height="1536"
+   viewBox="0 0 541.86666 406.4"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="title.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.44943533"
+     inkscape:cx="920.04339"
+     inkscape:cy="849.95544"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5"
+     showguides="true">
+    <sodipodi:guide
+       position="-176.6105,508.83409"
+       orientation="-1,0"
+       id="guide25"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ae7ce7;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#788be0;stop-opacity:1;"
+         offset="0.56880736"
+         id="stop4" />
+      <stop
+         style="stop-color:#319fd8;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="119.10459"
+       y1="152.91454"
+       x2="237.61681"
+       y2="152.32584"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-3.3355776,-0.10693969)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       x1="119.10459"
+       y1="152.91454"
+       x2="300.0192"
+       y2="153.79759"
+       gradientTransform="translate(125.57159,0.36433146)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient24"
+       gradientUnits="userSpaceOnUse"
+       x1="119.10459"
+       y1="152.91454"
+       x2="237.61681"
+       y2="152.32584"
+       gradientTransform="translate(-3.3355776,-0.10693969)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient25"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(125.57159,0.36433146)"
+       x1="119.10459"
+       y1="152.91454"
+       x2="300.0192"
+       y2="153.79759" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter32"
+       x="-0.019843294"
+       y="-0.79601532"
+       width="1.0396866"
+       height="2.5920306">
+      <feGaussianBlur
+         stdDeviation="1.5 11.559"
+         result="blur"
+         id="feGaussianBlur32" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter33"
+       x="-0.03101151"
+       y="-0.78484318"
+       width="1.062023"
+       height="2.5696864">
+      <feGaussianBlur
+         stdDeviation="1.5 11.559"
+         result="blur"
+         id="feGaussianBlur33" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter50"
+       x="-0.03101151"
+       y="-0.071293823"
+       width="1.062023"
+       height="1.1425876">
+      <feGaussianBlur
+         stdDeviation="1.5 1.05"
+         result="blur"
+         id="feGaussianBlur50" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter51"
+       x="-0.019843294"
+       y="-0.072308682"
+       width="1.0396866"
+       height="1.1446174">
+      <feGaussianBlur
+         stdDeviation="1.5 1.05"
+         result="blur"
+         id="feGaussianBlur51" />
+    </filter>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg">
+    <rect
+       style="fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="686.8537"
+       height="541.15741"
+       x="-54.948292"
+       y="-46.622795" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient24);stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter33)"
+       x="114.40475"
+       y="169.43915"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:url(#linearGradient24);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="114.40475"
+         y="169.43915">Rune</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient25);stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter32)"
+       x="243.3119"
+       y="169.91043"
+       id="text1-7"><tspan
+         sodipodi:role="line"
+         id="tspan1-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:url(#linearGradient25);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="243.3119"
+         y="169.91043">Breakers</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="g5"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter50)"
+       x="114.40475"
+       y="169.43915"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="114.40475"
+         y="169.43915">Rune</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter51)"
+       x="243.3119"
+       y="169.91043"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="243.3119"
+         y="169.91043">Breakers</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1 copy"
+     inkscape:groupmode="layer"
+     id="g34"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient3);stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="114.40475"
+       y="169.43915"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:url(#linearGradient3);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="114.40475"
+         y="169.43915">Rune</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient4);stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="243.3119"
+       y="169.91043"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:url(#linearGradient4);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="243.3119"
+         y="169.91043">Breakers</tspan></text>
+  </g>
+</svg>

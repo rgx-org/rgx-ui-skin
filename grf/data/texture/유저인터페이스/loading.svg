@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2048"
+   height="1536"
+   viewBox="0 0 541.86666 406.4"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="loading.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   sodipodi:docname="loading.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.44943533"
+     inkscape:cx="517.31581"
+     inkscape:cy="921.1559"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g34"
+     showguides="true">
+    <sodipodi:guide
+       position="-176.6105,508.83409"
+       orientation="-1,0"
+       id="guide25"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ae7ce7;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#788be0;stop-opacity:1;"
+         offset="0.56880736"
+         id="stop4" />
+      <stop
+         style="stop-color:#319fd8;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="119.10459"
+       y1="152.91454"
+       x2="258.81705"
+       y2="153.74709"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(253.1486,205.37341)" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter32"
+       x="-0.019843294"
+       y="-0.79601532"
+       width="1.0396866"
+       height="2.5920306">
+      <feGaussianBlur
+         stdDeviation="1.5 11.559"
+         result="blur"
+         id="feGaussianBlur32" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter33"
+       x="-0.03101151"
+       y="-0.78484318"
+       width="1.062023"
+       height="2.5696864">
+      <feGaussianBlur
+         stdDeviation="1.5 11.559"
+         result="blur"
+         id="feGaussianBlur33" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter50"
+       x="-0.03101151"
+       y="-0.071293823"
+       width="1.062023"
+       height="1.1425876">
+      <feGaussianBlur
+         stdDeviation="1.5 1.05"
+         result="blur"
+         id="feGaussianBlur50" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter51"
+       x="-0.019843294"
+       y="-0.072308682"
+       width="1.0396866"
+       height="1.1446174">
+      <feGaussianBlur
+         stdDeviation="1.5 1.05"
+         result="blur"
+         id="feGaussianBlur51" />
+    </filter>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg">
+    <rect
+       style="fill:#030212;fill-opacity:1;stroke:none;stroke-width:0.203973;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="541.86664"
+       height="406.39999"
+       x="0"
+       y="2.1316282e-14" />
+  </g>
+  <g
+     inkscape:label="Layer 1 copy"
+     inkscape:groupmode="layer"
+     id="g34"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient3);stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="370.88889"
+       y="374.91953"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;font-family:'Academy Engraved LET';-inkscape-font-specification:'Academy Engraved LET';fill:url(#linearGradient3);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="370.88889"
+         y="374.91953">Loading...</tspan></text>
+  </g>
+</svg>
