@@ -10,7 +10,7 @@ destination_dir = os.path.join(source_dir, DEST_NAME)
 # Create the destination directory if it doesn't exist
 os.makedirs(destination_dir, exist_ok=True)
 
-extensions = ['.bmp', '.tga', '.jpg ']
+extensions = ['.bmp', '.tga', '.jpg']
 
 for root, dirs, files in os.walk(source_dir):
     # remove dest from the pool of dirs
