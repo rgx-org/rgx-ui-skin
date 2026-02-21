@@ -2,7 +2,7 @@ import os
 import shutil
 
 DEST_NAME = 'dist'
-IGNORE_DIRS = [DEST_NAME, ".git"]
+IGNORE_DIRS = [DEST_NAME, ".git", "olde"]
 
 source_dir = os.getcwd()
 destination_dir = os.path.join(source_dir, DEST_NAME)
