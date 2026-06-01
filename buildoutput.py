@@ -7,6 +7,21 @@ DEST_NAME = 'dist'
 IGNORE_DIRS = [DEST_NAME, ".git", "olde"]
 CONTENT_WIDTH = 15
 
+# 0,0, 'right'      is titlebar left. (lol stupid)
+# -21, 108, 'left'  is bottom left, RTL
+# -81, 108, 'right' is bottom left, LTR
+# 230, 23, 'left'   is top right, RTL (turns out is also stupid because text 'box' covers it ;_;)
+
+XCF_TASKS = {
+    'RGX/basic_interface/collection_bg.xcf': {
+        'handler': 'collection_bg',
+        'direction': 'right',
+        'offset': 5,
+        'layer_offset_x': -81,
+        'layer_offset_y': 108,
+    },
+}
+
 GIMP_PATH = os.environ.get('GIMP_PATH', '')
 if not GIMP_PATH:
     _candidates = [
@@ -33,16 +48,6 @@ SYSBOX_VARIANTS = [
     'RGX/sysbox_rm.bmp',
     'RGX/sysbox_ru.bmp',
 ]
-
-XCF_TASKS = {
-    'RGX/basic_interface/collection_bg.xcf': {
-        'handler': 'collection_bg',
-        'direction': 'right',
-        'offset': 5,
-        'layer_offset_x': 0,
-        'layer_offset_y': 0,
-    },
-}
 
 source_dir = os.getcwd()
 destination_dir = os.path.join(source_dir, DEST_NAME)
