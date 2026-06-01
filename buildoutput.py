@@ -5,8 +5,12 @@ import tempfile
 
 DEST_NAME = 'dist'
 IGNORE_DIRS = [DEST_NAME, ".git", "olde"]
-GIMP_PATH = '/Applications/GIMP.app/Contents/MacOS/gimp'
 CONTENT_WIDTH = 15
+
+GIMP_PATH = os.environ.get('GIMP_PATH', '')
+if not GIMP_PATH:
+    if os.path.exists('/Applications/GIMP.app/Contents/MacOS/gimp'):
+        GIMP_PATH = '/Applications/GIMP.app/Contents/MacOS/gimp'
 
 XCF_TASKS = {
     'RGX/basic_interface/collection_bg.xcf': {
@@ -45,15 +49,26 @@ for root, dirs, files in os.walk(source_dir):
 # GIMP batch processing (Python-Fu, GIMP 3 GI bindings)
 # ---------------------------------------------------------------------------
 
+def to_posix(path):
+    return path.replace('\\', '/')
+
 def run_gimp_python(script_path):
+    if not GIMP_PATH:
+        print("Error: GIMP not found. Set the GIMP_PATH environment variable to")
+        print("the full path to your GIMP executable. For example:")
+        print('  Windows:  set GIMP_PATH=C:\\Program Files\\GIMP 3\\bin\\gimp-3.0.exe')
+        print('  macOS:    export GIMP_PATH=/Applications/GIMP.app/Contents/MacOS/gimp')
+        print('  Linux:    export GIMP_PATH=/usr/bin/gimp')
+        return None
     if not os.path.exists(GIMP_PATH):
         print(f"Error: GIMP not found at {GIMP_PATH}")
         return None
     print("Running GIMP Python-Fu batch...")
+    script_posix = to_posix(script_path)
     result = subprocess.run(
         [GIMP_PATH, '-i', '--quit',
          '--batch-interpreter=python-fu-eval',
-         '-b', f'exec(open("{script_path}").read())'],
+         '-b', f'exec(open("{script_posix}").read())'],
         capture_output=True, text=True, timeout=300,
     )
     if result.stdout:
@@ -65,9 +80,9 @@ def run_gimp_python(script_path):
 
 def process_collection_bg(xcf_rel_path, direction, offset,
                           layer_offset_x, layer_offset_y):
-    xcf_abs = os.path.join(source_dir, xcf_rel_path)
+    xcf_abs = to_posix(os.path.join(source_dir, xcf_rel_path))
     rel_dir = os.path.dirname(xcf_rel_path)
-    dest = os.path.join(destination_dir, rel_dir)
+    dest = to_posix(os.path.join(destination_dir, rel_dir))
     os.makedirs(dest, exist_ok=True)
 
     script = f'''import gi
@@ -142,7 +157,7 @@ image = Gimp.file_load(Gimp.RunMode.NONINTERACTIVE, xcf_file)
 print("Loaded: {xcf_abs}")
 
 # Step 1: export with current visible layers
-export_bmp(image, "{os.path.join(dest, 'collection_bg.bmp')}")
+export_bmp(image, "{dest}/collection_bg.bmp")
 
 # Step 2: show lv1, export g1..g5
 lv1 = find_layer(image, "lv1")
