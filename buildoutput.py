@@ -9,8 +9,30 @@ CONTENT_WIDTH = 15
 
 GIMP_PATH = os.environ.get('GIMP_PATH', '')
 if not GIMP_PATH:
-    if os.path.exists('/Applications/GIMP.app/Contents/MacOS/gimp'):
-        GIMP_PATH = '/Applications/GIMP.app/Contents/MacOS/gimp'
+    _candidates = [
+        '/Applications/GIMP.app/Contents/MacOS/gimp',
+        os.path.expandvars(r'%ProgramFiles%\GIMP 3\bin\gimp-3.0.exe'),
+        os.path.expandvars(r'%ProgramFiles%\GIMP 3\bin\gimp.exe'),
+        '/usr/bin/gimp',
+        '/usr/local/bin/gimp',
+        '/snap/bin/gimp',
+    ]
+    for _c in _candidates:
+        if os.path.exists(_c):
+            GIMP_PATH = _c
+            break
+
+SYSBOX_VARIANTS = [
+    'RGX/sysbox_bg.bmp',
+    'RGX/sysbox_ld.bmp',
+    'RGX/sysbox_lm.bmp',
+    'RGX/sysbox_lu.bmp',
+    'RGX/sysbox_md.bmp',
+    'RGX/sysbox_mu.bmp',
+    'RGX/sysbox_rd.bmp',
+    'RGX/sysbox_rm.bmp',
+    'RGX/sysbox_ru.bmp',
+]
 
 XCF_TASKS = {
     'RGX/basic_interface/collection_bg.xcf': {
@@ -46,6 +68,26 @@ for root, dirs, files in os.walk(source_dir):
 
 
 # ---------------------------------------------------------------------------
+# Sysbox variant copies: sysbox_{suffix}.bmp → sysbox_g{1..20}_{suffix}.bmp
+# ---------------------------------------------------------------------------
+for rel_path in SYSBOX_VARIANTS:
+    src = os.path.join(source_dir, rel_path)
+    if not os.path.exists(src):
+        print(f"Warning: sysbox source not found: {rel_path}")
+        continue
+    rel_dir = os.path.dirname(rel_path)
+    dest_folder = os.path.join(destination_dir, rel_dir)
+    os.makedirs(dest_folder, exist_ok=True)
+    basename = os.path.basename(rel_path)
+    suffix = basename.replace('sysbox_', '').replace('.bmp', '')
+    for i in range(1, 21):
+        variant_name = f'sysbox_g{i}_{suffix}.bmp'
+        dest_path = os.path.join(dest_folder, variant_name)
+        shutil.copy2(src, dest_path)
+    print(f"Sysbox: {basename} → sysbox_g1_{suffix}.bmp .. sysbox_g20_{suffix}.bmp")
+
+
+# ---------------------------------------------------------------------------
 # GIMP batch processing (Python-Fu, GIMP 3 GI bindings)
 # ---------------------------------------------------------------------------
 
@@ -56,7 +98,8 @@ def run_gimp_python(script_path):
     if not GIMP_PATH:
         print("Error: GIMP not found. Set the GIMP_PATH environment variable to")
         print("the full path to your GIMP executable. For example:")
-        print('  Windows:  set GIMP_PATH=C:\\Program Files\\GIMP 3\\bin\\gimp-3.0.exe')
+        print('  Windows (cmd):        set GIMP_PATH=C:\\Program Files\\GIMP 3\\bin\\gimp-3.0.exe')
+        print('  Windows (PowerShell): $env:GIMP_PATH="C:\\Program Files\\GIMP 3\\bin\\gimp-3.0.exe"')
         print('  macOS:    export GIMP_PATH=/Applications/GIMP.app/Contents/MacOS/gimp')
         print('  Linux:    export GIMP_PATH=/usr/bin/gimp')
         return None
